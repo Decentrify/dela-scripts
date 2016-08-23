@@ -23,13 +23,13 @@ Takes as parameter the run-dir, which should be the same as the install-dir abov
 3. run assembly.sh with current dir as base-dir:<br>
 ```sh ./assembly.sh . ```
 4. When assemly finishes, you will have in dela-scripts a build directory with all the cloned dependencies installed and a build/dela directory with a basic dela skeleton dir.
-5. run deploy.sh to deploy tar with skeleton to your server(snurran)
-./deploy.sh .
+5. run deploy.sh to deploy tar with skeleton to your server(snurran)<br>
+```sh ./deploy.sh .```
 6. At this point you will have a tar.gz in build/dela and this tar.gz will be deployed to snurran
 7. install the dela skeleton. download the tar.gz from snurran or in our case we have it in build/dela and run install
-./install my_dela_install build/dela/dela-0.0.1-SNAPSHOT.jar
+```sh ./install my_dela_install build/dela/dela-0.0.1-SNAPSHOT.jar```
 At this point you will have the my_dela_install folder with the finalized dela skeleton
 8. start dela
-./my_dela_install/bin/start.sh my_dela_install
+```sh ./my_dela_install/bin/start.sh my_dela_install```
 9. stop dela
-./my_dela_install/bin/stop.sh my_dela_install
+```sh ./my_dela_install/bin/stop.sh my_dela_install```
