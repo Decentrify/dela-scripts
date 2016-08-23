@@ -21,7 +21,6 @@ Takes as parameter the run-dir, which should be the same as the install-dir abov
 1. clone this repository - we assume you didn't change dir-name: dela-scripts
 2. cd dela-scripts
 3. run assembly.sh with current dir as base-dir:
-
 ```sh 
 ./assembly.sh . 
 ```
@@ -35,7 +34,7 @@ Takes as parameter the run-dir, which should be the same as the install-dir abov
 ```sh 
 ./install.sh my_dela_install build/dela/dela-0.0.1-SNAPSHOT.jar
 ```
-At this point you will have the my_dela_install folder with the finalized dela skeleton
+...At this point you will have the my_dela_install folder with the finalized dela skeleton
 
 8. start dela
 ```sh 
