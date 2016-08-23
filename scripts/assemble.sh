@@ -6,7 +6,7 @@ if [ $# -ne 1 ]; then
     exit 1
 fi
 
-export MAVEN_OPTS="-Xmx512m"
+export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=128m"
 BASE_DIR=`cd $1; pwd`
 echo "base dir: $BASE_DIR"
 
