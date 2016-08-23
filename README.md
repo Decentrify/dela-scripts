@@ -21,7 +21,7 @@ Takes as parameter the run-dir, which should be the same as the install-dir abov
 1. clone this repository - we assume you didn't change dir-name: dela-scripts
 2. cd dela-scripts
 3. run assembly.sh with current dir as base-dir:<br>
-```sh ./assembly.sh .
+```sh ./assembly.sh . ```
 4. When assemly finishes, you will have in dela-scripts a build directory with all the cloned dependencies installed and a build/dela directory with a basic dela skeleton dir.
 5. run deploy.sh to deploy tar with skeleton to your server(snurran)
 ./deploy.sh .
