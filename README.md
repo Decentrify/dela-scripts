@@ -35,11 +35,11 @@ Takes as parameter the run-dir, which should be the same as the install-dir abov
    ./install.sh my_dela_install build/dela/dela-0.0.1-SNAPSHOT.jar
    ```  
    At this point you will have the my_dela_install folder with the finalized dela skeleton
-8. Start dela
+8. Start dela  
    ```sh 
    ./my_dela_install/bin/start.sh my_dela_install
    ```
-9. Stop dela
+9. Stop dela  
    ```sh 
    ./my_dela_install/bin/stop.sh my_dela_install
    ```
