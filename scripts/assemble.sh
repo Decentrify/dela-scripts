@@ -18,17 +18,16 @@ KAFKA_UTIL_REPO="https://github.com/hopshadoop/kafka-util.git"
 KAFKA_BRANCH="hops-v1.9"
 #
 KTOOLBOX_REPO="https://github.com/Decentrify/KompicsToolbox.git"
-KTOOLBOX_BRANCH="storage"
+KTOOLBOX_BRANCH="dev"
 #
 NATTRAVERSAL_REPO="https://github.com/Decentrify/NatTraversal.git"
 NATTRAVERSAL_BRANCH="hops-v1.9"
 #
 GVOD_REPO="https://github.com/Decentrify/GVoD.git"
-GVOD_BRANCH="storage"
+GVOD_BRANCH="dev"
 #
 DOZY_REPO="https://github.com/Decentrify/Dozy.git"
-DOZY_BRANCH="storage"
-DOZY_VERSION="0.0.1-SNAPSHOT"
+DOZY_BRANCH="dev"
 
 LOG="build.log"
 
