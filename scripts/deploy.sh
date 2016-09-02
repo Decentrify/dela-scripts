@@ -20,5 +20,7 @@ echo "archiving dela"
 cd ${BASE_DIR}/build/dela
 touch $LOG
 tar -czvf $TAR .version bin lib conf>> $LOG 2>&1
-echo "deploying ${TAR} to ${DEPLOY_LOC}:${DEPLOY_DIR} as user:${USER}"
+echo "deploying ${TAR} and ${JAR} to ${DEPLOY_LOC}:${DEPLOY_DIR} as user:${USER}"
 scp ${TAR} ${USER}@${DEPLOY_LOC}:${DEPLOY_DIR}
+scp lib/${JAR} ${USER}@${DEPLOY_LOC}:${DEPLOY_DIR}
+
