@@ -12,21 +12,27 @@ echo "base dir: $BASE_DIR"
 
 #legacy dependency
 CARACAL_REPO="https://github.com/CaracalDB/CaracalDB.git"
+#CARACAL_REPO="git@github.com:CaracalDB/CaracalDB.git"
 CARACAL_BRANCH="vod"
 #
 KAFKA_UTIL_REPO="https://github.com/hopshadoop/kafka-util.git"
-KAFKA_BRANCH="hops-v1.9"
+#KAFKA_UTIL_REPO="git@github.com:hopshadoop/kafka-util.git"
+KAFKA_BRANCH="vod2"
 #
 KTOOLBOX_REPO="https://github.com/Decentrify/KompicsToolbox.git"
+#KTOOLBOX_REPO="git@github.com:Decentrify/KompicsToolbox.git"
 KTOOLBOX_BRANCH="dev"
 #
 NATTRAVERSAL_REPO="https://github.com/Decentrify/NatTraversal.git"
-NATTRAVERSAL_BRANCH="hops-v1.9"
+#NATTRAVERSAL_REPO="git@github.com:Decentrify/NatTraversal.git"
+NATTRAVERSAL_BRANCH="dev"
 #
 GVOD_REPO="https://github.com/Decentrify/GVoD.git"
+#GVOD_REPO="git@github.com:Decentrify/GVoD.git"
 GVOD_BRANCH="dev"
 #
 DOZY_REPO="https://github.com/Decentrify/Dozy.git"
+#DOZY_REPO="git@github.com:Decentrify/Dozy.git"
 DOZY_BRANCH="dev"
 
 LOG="build.log"
