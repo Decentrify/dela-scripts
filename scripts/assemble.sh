@@ -10,6 +10,10 @@ export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=128m"
 BASE_DIR=`cd $1; pwd`
 echo "base dir: $BASE_DIR"
 
+#kompics - is it necessary?
+KOMPICS_REPOR="https://github.com/kompics/kompics.git"
+KOMPICS_BRANCH="master"
+
 #legacy dependency
 CARACAL_REPO="https://github.com/CaracalDB/CaracalDB.git"
 #CARACAL_REPO="git@github.com:CaracalDB/CaracalDB.git"
@@ -43,6 +47,14 @@ mkdir build
 cd build
 touch $LOG
 
+#KOMPICS
+cd $BASE_DIR/build
+echo "cloning kompics.."
+git clone --progress $KOMPICS_REPO caracaldb >>./$LOG  2>&1
+cd kompics
+git checkout $KOMPICS_BRANCH >>../$LOG  2>&1
+echo "building kompics.."
+mvn clean install -DskipTests >>../$LOG  2>&1
 #CARACAL
 cd $BASE_DIR/build
 echo "cloning caracaldb.."
