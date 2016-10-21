@@ -11,7 +11,7 @@ BASE_DIR=`cd $1; pwd`
 echo "base dir: $BASE_DIR"
 
 #kompics - is it necessary?
-KOMPICS_REPOR="https://github.com/kompics/kompics.git"
+KOMPICS_REPO="https://github.com/kompics/kompics.git"
 KOMPICS_BRANCH="master"
 
 #legacy dependency
@@ -50,7 +50,7 @@ touch $LOG
 #KOMPICS
 cd $BASE_DIR/build
 echo "cloning kompics.."
-git clone --progress $KOMPICS_REPO caracaldb >>./$LOG  2>&1
+git clone --progress $KOMPICS_REPO kompics >>./$LOG  2>&1
 cd kompics
 git checkout $KOMPICS_BRANCH >>../$LOG  2>&1
 echo "building kompics.."
